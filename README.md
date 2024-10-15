@@ -39,7 +39,7 @@ To run the game locally on your machine, follow these steps:
 3. Open `index.html` in your browser:
 
    ```bash
-   open index.html
+   start index.html
    ```
 
    or just double-click the file.
