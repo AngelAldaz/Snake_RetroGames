@@ -1,69 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Snake Game</title>
-
-  <style>
-    body {
-      background-color: #1e1e1e;
-      margin: 0;
-      display: flex;
-      justify-content: center; 
-      align-items: center;
-      height: 100vh;
-    }
-
-    canvas {
-      border: 10px solid darkgreen;
-      background-color: lightgreen;
-      display: block;
-    }
-  </style>
-
-  <script type="module">
-    const $ = element => document.querySelector(element)
-    const $$ = element => document.querySelectorAll(element)
-
-    const snakeBoard = $("canvas");
-
-    const snakeBoard_ctx = snakeBoard.getContext('2d');
-
-    snakeBoard.width = 400
-    snakeBoard.height = 400
-
-    //Variables de juego
-    let counter = 0
-
-    function drawSnake(){
-      
-    }
-
-
-    function draw() {
-
-      //Dibujar elementos
-      drawSnake()
-      drawFruit()
-      
-      //Colisiones y movimientos
-      collisionDetection()
-      snakeMovement()
-
-
-      // Actualización de Frames
-      window.requestAnimationFrame(draw)
-    }
-    //draw()
-
-    
-
-  </script>
-</head>
-<body>
-
-  <canvas ></canvas>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <canvas></canvas>
+  </body>
 </html>
